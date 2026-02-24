@@ -1,11 +1,21 @@
-import express from "express";
+//const express = require('express')
+import express from 'express'
+
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send("Olá Mundo Express API")
 })
 
+app.get('/user', (req, res) => {
+    res.send("Aqui está a lista de usuários!")
+})
+
+// Rotas da API: endereços que vão ficar escutando os métodos
+// req: guarda as informações que chegam da requisição
+// res: o que o express me da para responder o usuário
+
 app.listen(port, () => {
-    console.log('Example app listening on port $(port)')
+    console.log(`Example app listening on port ${port}`)
 })
