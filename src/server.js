@@ -9,10 +9,26 @@ app.get('/', (req, res) => {
 })
 
 app.get('/user', (req, res) => {
-    res.send("Aqui está a lista de usuários!")
+    res.send("Exemplo de GET na rota /user")
 })
 
-// Rotas da API: endereços que vão ficar escutando os métodos
+app.post('/user', (req, res) => {
+    res.send("Exemplo de POST na rota /user")
+})
+
+app.put('/user', (req, res) => {
+    res.send("Exemplo de PUT na rota /user")
+})
+
+app.patch('/user', (req, res) => {
+    res.send("Exemplo de PATCH na rota /user")
+})
+
+app.delete('/user', (req, res) => {
+    res.send("Exemplo de DELETE na rota /user")
+})
+
+// ^ Rotas da API: endereços que vão ficar escutando os métodos
 // req: guarda as informações que chegam da requisição
 // res: o que o express me da para responder o usuário
 
