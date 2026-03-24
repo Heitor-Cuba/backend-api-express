@@ -1,3 +1,3 @@
-export function deleteAvatarUserController(req, res){
-    res.send("Exemplo de DELETE na rota /user controlada pelo Controller")
+export function deleteUsersController(req, res){
+    res.send("Exemplo de DELETE na rota /user respondida pelo Controller")
 }

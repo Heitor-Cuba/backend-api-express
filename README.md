@@ -45,6 +45,8 @@
 
 - É possível criar as tabelas de um banco de dados a partir do modelo prisma?
 
+- CLI
+    Command Line Interface: pacotes que trazem uma série de comandos de terminal
 
 ### Comandos do Prisma
 
@@ -57,8 +59,8 @@ para Mysql e Mariadb
 - Init
     npx prisma init --datasource-provider mysql --output ../generated/prisma
 
-    npm prisma db pull
-    npm prisma db push - gera o banco de dados a partir do schema do prisma
+    npx prisma db pull
+    npx prisma db push - gera o banco de dados a partir do schema do prisma
 
 - Gerar as funções para interagir com os modelos mapeados no esquema
-    npm prisma generate
+    npx prisma generate

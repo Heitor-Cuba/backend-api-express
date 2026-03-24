@@ -1,3 +1,3 @@
-export function updateAvatarUserController(req, res){
-    res.send("Exemplo de PATCH na rota /user controlada pelo Controller")
+export function updateAvatarUsersController(req, res){
+    res.send("Exemplo de PATCH na rota /user respondida pelo Controller")
 }

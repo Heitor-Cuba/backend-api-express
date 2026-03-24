@@ -1,13 +1,9 @@
-import { createUser } from "../../models/userModel";
+import { createUser } from "../../models/userModel.js";
 
 export async function createUserController(req, res){
-    
-    const user = {
-        avatar: "https://github.com/Heitor-Cuba.png",
-        name: "Heitor Cuba",
-        email: "heitorcuba@gmail.com",
-        pass: "12345678"
-    }
+    const user = req.body
+
+    console.log ("Dados recebidos para criação do usuário", user)
 
     const result = await createUser(user)
 
