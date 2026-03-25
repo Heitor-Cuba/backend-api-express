@@ -17,7 +17,7 @@ model user {
 
 model pub {
   id          Int @id @default(autoincrement())
-  title       String @db.VarChar(500)
-  description String @db.VarChar(255)
-  author      String @unique
+  title       String @db.VarChar(255)
+  description String @db.VarChar(500)
+  author      String @db.VarChar(255)
 }

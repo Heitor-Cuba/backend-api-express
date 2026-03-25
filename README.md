@@ -20,7 +20,8 @@
 - O que é HTTP?
     Hypertext Transfer Protocol
 
-- Quais os métodos de requisição HTTP e para que serve cada um deles? GET: pegar
+- Quais os métodos de requisição HTTP e para que serve cada um deles?
+    GET: pegar
     POST: postar
     PUT: atualização/edição (completa)
     PATCH: atualização/edição (parcial)
@@ -31,17 +32,28 @@
 - Para que serve o Router do Express?
     Separar em arquivos um conjunto de rotas/endpoints similares. Para facilitar a manutenção e escalabilidade do código
 
+- O que é um padrão de projeto?
+
+- O que é um padrão de projeto MVC?
+
 - Padrões de projetos:
     MVC (Model-View-Controller)
         MODEL - Regra de negócios, acesso a base de dados
         VIEW - Fluxo da aplicação, camada de apresentação, front-end
         CONTROLLER - Controle do Fluxo de Aplicação, Entrada, Processamento (lógico), Saída
 
+- Qual a responsabilidade de cada Camada?
+
 - O que é um ORM?
     Faz a comunicação entre Database e back-end
 
 - Quais as vantagens de utilizar um ORM?
     Trocar n sei o que sem muito esforço
+
+- Como utilizar parâmetros de Url?
+
+- O que é um middleware? (Exemplo Logger)
+    Um padrão de projetos que cria um fluxo de execução de funções, onde cada função é representada por um midle cada midle, executa uma determinada responsabilidade e passa para o próximo.
 
 - É possível criar as tabelas de um banco de dados a partir do modelo prisma?
 
