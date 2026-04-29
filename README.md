@@ -76,3 +76,10 @@ para Mysql e Mariadb
 
 - Gerar as funções para interagir com os modelos mapeados no esquema
     npx prisma generate
+
+
+--- Próximos Tópicos ---
+
+- Validação de dados com Zod
+- Tratamento de Erros
+- Autenticação com JWT
