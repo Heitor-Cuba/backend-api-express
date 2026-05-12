@@ -1,4 +1,4 @@
-import { createUser, validateUser } from "../../models/userModel.js";
+import { createUser, validateUser } from "../../models/userModel.js"
 
 export async function createUserController(req, res){
     const user = req.body
@@ -8,7 +8,7 @@ export async function createUserController(req, res){
     if(!success){
         return res.status(400).json({
             message: "Erro de validação",
-            fieldErrors: error.flatten().fieldErrors
+            fieldErrors: error
         })
     }
 
