@@ -5,12 +5,14 @@ import { createValidator } from '../helpers/createValidator.js'
 const userSchema = z.object({
     id: z.number("ID é obrigatório e deve ser um valor numérico")
         .positive("ID deve ser um valor numérico positivo"),
-    avatar: z.url("Avatar é obrigatório e deve ser uma URL válida")
+    avatar: z.string()
+            .url("Avatar é obrigatório e deve ser uma URL válida")
             .max(500, "Avatar deve ter no máximo 500 caracteres"),
     name: z.string("Nome deve ser uma string")
           .min(3, "Nome deve ter no mínimo 3 caracteres")
           .max(255, "Nome deve ter no máximo 255 caracteres"),
-    email: z.email("Email deve ser um edenreço de email válido"),
+    email: z.string()
+           .email("Email deve ser um endereço de email válido"),
     pass: z.string("Senha é obrigatória e deve ser uma string")
           .min(6, "Senha deve ter no mínimo 6 caracteres")
           .max(255, "Senha deve ter no máximo 255 caracteres")

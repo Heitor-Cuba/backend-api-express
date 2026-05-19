@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
     res.send("Olá Mundo Express API!")
 })
 
-app.use('/user', logger)
 app.use('/user', userRouter)
 app.use('/pub', pubRouter)
 

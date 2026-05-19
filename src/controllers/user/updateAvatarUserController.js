@@ -1,4 +1,4 @@
-import { updateUser, validateUser } from "../../models/userModel";
+import { updateUser, validateUser } from "../../models/userModel.js";
 
 export async function updateUsersController(req, res){
     const {id} = req.params
