@@ -1,5 +1,4 @@
 import express from 'express'
-
 import { getUsersController } from '../controllers/user/getUsersControllers.js'
 import { createUserController } from '../controllers/user/createUserController.js'
 import { updateUsersController } from '../controllers/user/updateUserController.js'

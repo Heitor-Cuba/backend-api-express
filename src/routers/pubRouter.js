@@ -1,5 +1,4 @@
 import express from 'express'
-
 import { getPubController } from '../controllers/pub/getPubControllers.js'
 import { createPubController } from '../controllers/pub/createPubController.js'
 import { updatePubController } from '../controllers/pub/updatePubController.js'
