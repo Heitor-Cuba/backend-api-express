@@ -1,6 +1,7 @@
 import * as z from 'zod'
 import {prisma} from '../helpers/dbConnection.js'
 import { createValidator } from '../helpers/createValidator.js'
+import { tr } from 'zod/locales'
 
 const userSchema = z.object({
     id: z.int("Id é obrigatório e deve ser um valor numérico")
@@ -25,15 +26,19 @@ export const createUser = async (user) => {
 }
 
 export const getUsers = async (name) => {
-    return await prisma.user.findMany(
-        name ? { 
-            where: { 
-                name: { 
-                    contains: name
-                }
-            } 
-        } : {}
-    )
+    return await prisma.user.findMany({
+        where: name ? {
+            name: {
+                contains: name
+            }
+        } : {},
+        select: {
+            id: true,
+            avatar: true,
+            name: true,
+            email: true
+        }
+    })
 }
   
 export const deleteUser = async (id) => {
